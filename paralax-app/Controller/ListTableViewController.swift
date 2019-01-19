@@ -24,11 +24,15 @@ class ListTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //number of row in section
+        return imageArray.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //return cell
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "paralaxCell", for: indexPath) as? ParalaxCell else {return UITableViewCell()}
+        
+        cell.cofigureCell(withImage: imageArray[indexPath.row]!, andDescription: nameArray[indexPath.row])
+        
+        return cell
         
     }
 

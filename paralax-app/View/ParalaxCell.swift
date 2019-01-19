@@ -21,7 +21,8 @@ class ParalaxCell: UITableViewCell {
     
     func cofigureCell(withImage image: UIImage, andDescription desk: String){
         itemImageView.image = image
-        descriptionLbl.text = description
+        descriptionLbl.text = desk
+        
     }
 
     func setParalax() {

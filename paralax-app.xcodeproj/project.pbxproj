@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		B520DABC21F376CE002BF5A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520DABB21F376CE002BF5A6 /* AppDelegate.swift */; };
-		B520DABE21F376CE002BF5A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520DABD21F376CE002BF5A6 /* ViewController.swift */; };
+		B520DABE21F376CE002BF5A6 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520DABD21F376CE002BF5A6 /* ListTableViewController.swift */; };
 		B520DAC121F376CF002BF5A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B520DABF21F376CF002BF5A6 /* Main.storyboard */; };
 		B520DAC321F376D0002BF5A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B520DAC221F376D0002BF5A6 /* Assets.xcassets */; };
 		B520DAC621F376D0002BF5A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B520DAC421F376D0002BF5A6 /* LaunchScreen.storyboard */; };
+		B520DAD021F3843A002BF5A6 /* ParalaxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B520DACF21F3843A002BF5A6 /* ParalaxCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B520DAB821F376CE002BF5A6 /* paralax-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "paralax-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B520DABB21F376CE002BF5A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		B520DABD21F376CE002BF5A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B520DABD21F376CE002BF5A6 /* ListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		B520DAC021F376CF002BF5A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B520DAC221F376D0002BF5A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B520DAC521F376D0002BF5A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B520DAC721F376D0002BF5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B520DACF21F3843A002BF5A6 /* ParalaxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParalaxCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		B520DABA21F376CE002BF5A6 /* paralax-app */ = {
 			isa = PBXGroup;
 			children = (
+				B520DACE21F3840D002BF5A6 /* View */,
+				B520DACD21F383C3002BF5A6 /* Controller */,
 				B520DABB21F376CE002BF5A6 /* AppDelegate.swift */,
-				B520DABD21F376CE002BF5A6 /* ViewController.swift */,
 				B520DABF21F376CF002BF5A6 /* Main.storyboard */,
 				B520DAC221F376D0002BF5A6 /* Assets.xcassets */,
 				B520DAC421F376D0002BF5A6 /* LaunchScreen.storyboard */,
 				B520DAC721F376D0002BF5A6 /* Info.plist */,
 			);
 			path = "paralax-app";
+			sourceTree = "<group>";
+		};
+		B520DACD21F383C3002BF5A6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B520DABD21F376CE002BF5A6 /* ListTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B520DACE21F3840D002BF5A6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B520DACF21F3843A002BF5A6 /* ParalaxCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +154,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B520DABE21F376CE002BF5A6 /* ViewController.swift in Sources */,
+				B520DABE21F376CE002BF5A6 /* ListTableViewController.swift in Sources */,
 				B520DABC21F376CE002BF5A6 /* AppDelegate.swift in Sources */,
+				B520DAD021F3843A002BF5A6 /* ParalaxCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

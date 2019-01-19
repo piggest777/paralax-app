@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="CJL-Ig-nuR">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="CJL-Ig-nuR" customClass="ParalaxCell" customModule="paralax_app" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CJL-Ig-nuR" id="GMu-Yo-dgj">
@@ -47,6 +47,10 @@
                                         <constraint firstAttribute="bottom" secondItem="EH0-tw-4pE" secondAttribute="bottom" id="skP-7M-C5l"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLbl" destination="EH0-tw-4pE" id="BYW-us-87C"/>
+                                    <outlet property="itemImageView" destination="UNJ-Sm-DGM" id="ZWf-JJ-2o0"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
